@@ -1,0 +1,184 @@
+{
+    "lines": [
+        {
+            "data": {
+                "end": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "start": [
+                    0.0,
+                    0.0,
+                    -3.8000000000000003
+                ]
+            },
+            "dtype": "compas.geometry/Line",
+            "guid": "0c478843-b9c4-4d65-839e-f298251c8caf"
+        },
+        {
+            "data": {
+                "end": [
+                    0.0,
+                    5.0,
+                    0.0
+                ],
+                "start": [
+                    0.0,
+                    5.0,
+                    -3.8000000000000003
+                ]
+            },
+            "dtype": "compas.geometry/Line",
+            "guid": "a472a4ee-2366-4f71-ae02-5593e75dbbac"
+        },
+        {
+            "data": {
+                "end": [
+                    3.1,
+                    5.0,
+                    0.0
+                ],
+                "start": [
+                    3.1,
+                    5.0,
+                    -3.8000000000000003
+                ]
+            },
+            "dtype": "compas.geometry/Line",
+            "guid": "e965ae7b-74ab-496d-8f6f-2fd35992ab07"
+        },
+        {
+            "data": {
+                "end": [
+                    3.1,
+                    0.0,
+                    0.0
+                ],
+                "start": [
+                    3.1,
+                    0.0,
+                    -3.8000000000000003
+                ]
+            },
+            "dtype": "compas.geometry/Line",
+            "guid": "4b3d92d6-771b-4784-ac26-f32d1099ea8d"
+        },
+        {
+            "data": {
+                "end": [
+                    0.0,
+                    5.0,
+                    0.0
+                ],
+                "start": [
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            "dtype": "compas.geometry/Line",
+            "guid": "74cffdf1-822a-4fe3-be4e-c95379ecda16"
+        },
+        {
+            "data": {
+                "end": [
+                    3.1,
+                    0.0,
+                    0.0
+                ],
+                "start": [
+                    3.1,
+                    5.0,
+                    0.0
+                ]
+            },
+            "dtype": "compas.geometry/Line",
+            "guid": "ac897c84-a779-4b3c-a630-423a5a182364"
+        },
+        {
+            "data": {
+                "end": [
+                    3.1,
+                    5.0,
+                    0.0
+                ],
+                "start": [
+                    0.0,
+                    5.0,
+                    0.0
+                ]
+            },
+            "dtype": "compas.geometry/Line",
+            "guid": "a24f2465-e9ed-45ea-b8dd-de2a2bfbc0bc"
+        },
+        {
+            "data": {
+                "end": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "start": [
+                    3.1,
+                    0.0,
+                    0.0
+                ]
+            },
+            "dtype": "compas.geometry/Line",
+            "guid": "f898f71d-8a9b-435b-a166-2b5bbb1160f1"
+        }
+    ],
+    "meshes": [
+        {
+            "data": {
+                "attributes": {},
+                "default_edge_attributes": {},
+                "default_face_attributes": {},
+                "default_vertex_attributes": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "edgedata": {},
+                "face": {
+                    "0": [
+                        0,
+                        1,
+                        2,
+                        3
+                    ]
+                },
+                "facedata": {
+                    "0": {}
+                },
+                "max_face": 0,
+                "max_vertex": 3,
+                "vertex": {
+                    "0": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "1": {
+                        "x": 0.0,
+                        "y": 5.0,
+                        "z": 0.0
+                    },
+                    "2": {
+                        "x": 3.1,
+                        "y": 5.0,
+                        "z": 0.0
+                    },
+                    "3": {
+                        "x": 3.1,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                }
+            },
+            "dtype": "compas.datastructures/Mesh",
+            "guid": "11220e36-6536-4ed3-b476-303a969a2ce5"
+        }
+    ]
+}
