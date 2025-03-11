@@ -5,6 +5,7 @@ from compas_grid.models import GridModel
 from compas_grid.elements import BeamProfileElement
 from compas_grid.elements import BlockElement
 from compas_grid.elements import ColumnElement
+from compas_grid.elements import CableElement
 from compas.geometry import Translation
 from compas.geometry import Scale
 from compas_viewer import Viewer
@@ -72,7 +73,7 @@ for idx, face in enumerate(faces_floors):
         block.is_support = mesh.aabb().frame.point[2] < 25
         S = Scale.from_factors([1, 1, 1])
 
-        T = Translation.from_vector([-1500 + idx * 3100, -2500, 4000])
+        T = Translation.from_vector([-1500 + idx * 3100, -2500, 2700])
         block.transformation = T * S
         model.add_element(block)
 
@@ -83,6 +84,8 @@ elements = list(model.elements())
 columns = [element for element in elements if isinstance(element, ColumnElement)]
 beams = [element for element in elements if isinstance(element, BeamProfileElement)]
 blocks = [element for element in elements if isinstance(element, BlockElement)]
+cables = [element for element in elements if isinstance(element, CableElement)]
+
 
 # =============================================================================
 # Export

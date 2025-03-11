@@ -1,3 +1,7 @@
+#! python3
+# venv: brg-csd
+# r: compas_rv
+
 from pathlib import Path
 
 import compas
@@ -18,7 +22,7 @@ lines = rhino_geometry["lines"]
 # =============================================================================
 # RhinoVault Input
 # =============================================================================
-f0 = Frame([-1550, -2500, 3800], [1, 0, 0], [0, 1, 0])
+f0 = Frame([-1550, -2500, 2500], [1, 0, 0], [0, 1, 0])
 f1 = Frame.worldXY()
 T = Transformation.from_frame_to_frame(f0, f1)
 S = Scale.from_factors([1e-3, 1e-3, 1e-3])

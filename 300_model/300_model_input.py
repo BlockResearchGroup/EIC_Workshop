@@ -16,10 +16,10 @@ points = [
     Point(-1550, 2500, 0),
     Point(1550, 2500, 0),
     Point(1550, -2500, 0),
-    Point(-1550, -2500, 3800),
-    Point(-1550, 2500, 3800),
-    Point(1550, 2500, 3800),
-    Point(1550, -2500, 3800),
+    Point(-1550, -2500, 2500),
+    Point(-1550, 2500, 2500),
+    Point(1550, 2500, 2500),
+    Point(1550, -2500, 2500),
 ]
 
 lines = [
@@ -50,8 +50,8 @@ compas.json_dump(
 # =============================================================================
 
 config = Config()
-config.camera.target = [0, 1000, 1250]
-config.camera.position = [0, -10000, 8125]
+config.camera.target = [0, 1000, 500]
+config.camera.position = [0, -7000, 4000]
 config.camera.near = 10
 config.camera.far = 100000
 config.camera.pandelta = 100

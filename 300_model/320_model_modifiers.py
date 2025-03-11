@@ -9,6 +9,7 @@ from compas.tolerance import TOL
 from compas_grid.elements import BeamProfileElement
 from compas_grid.elements import BlockElement
 from compas_grid.elements import ColumnElement
+from compas_grid.elements import CableElement
 from compas_model.models import Model
 from compas_viewer import Viewer
 from compas_viewer.config import Config
@@ -39,45 +40,11 @@ for beam in beams:
 TOL.lineardeflection = 1
 TOL.angulardeflection = 1
 
+elements = list(model.elements())
+beams = [element for element in elements if isinstance(element, BeamProfileElement)]
 columns = [element for element in elements if isinstance(element, ColumnElement)]
-
-blocks = []
-for element in elements:
-    if isinstance(element, BlockElement):
-        mesh = element.modelgeometry
-
-        # cleanup mesh
-        brep = Brep.from_mesh(mesh)
-        brep.simplify(
-            lineardeflection=TOL.lineardeflection,
-            angulardeflection=TOL.angulardeflection,
-        )
-        mesh = Mesh.from_polygons(brep.to_polygons())
-
-        polygons = []
-        for face in mesh.faces():
-            points = [
-                p
-                for i, p in enumerate(mesh.face_polygon(face).points)
-                if distance_point_point(
-                    p,
-                    mesh.face_polygon(face).points[
-                        (i + 1) % len(mesh.face_polygon(face).points)
-                    ],
-                )
-                > 1
-            ]
-            if len(points) > 2:
-                polygons.append(Polygon(points))
-
-        mesh = Mesh.from_polygons(polygons)
-
-        brep = Brep.from_mesh(mesh)
-        brep.simplify(
-            lineardeflection=TOL.lineardeflection,
-            angulardeflection=TOL.angulardeflection,
-        )
-        blocks.append(brep)
+blocks = [element for element in elements if isinstance(element, BlockElement)]
+cables = [element for element in elements if isinstance(element, CableElement)]
 
 # =============================================================================
 # Export
@@ -91,8 +58,8 @@ compas.json_dump(
 # Visualize
 # =============================================================================
 config = Config()
-config.camera.target = [0, 1000, 1250]
-config.camera.position = [0, -10000, 8125]
+config.camera.target = [0, 1000, 500]
+config.camera.position = [0, -7000, 4000]
 config.camera.near = 10
 config.camera.far = 100000
 config.camera.pandelta = 100
@@ -101,22 +68,34 @@ config.renderer.show_grid = False
 viewer = Viewer(config=config)
 
 viewer.scene.add(
-    [Brep.from_mesh(e.modelgeometry) for e in columns],
+    [e.modelgeometry for e in columns],
     show_faces=True,
     opacity=0.7,
     name="Columns",
 )
 
 viewer.scene.add(
-    [Brep.from_mesh(e.modelgeometry) for e in beams],
-    show_faces=False,
+    [e.modelgeometry for e in beams],
+    show_faces=True,
+    opacity=0.7,
     name="Beams",
+    hide_coplanaredges=True,
 )
 
 viewer.scene.add(
-    blocks,
+    [e.modelgeometry for e in blocks],
     show_faces=True,
+    opacity=0.7,
     name="Blocks",
 )
+
+viewer.scene.add(
+    [e.modelgeometry for e in cables],
+    show_faces=True,
+    opacity=0.7,
+    name="Cables",
+    hide_coplanaredges=True,
+)
+
 
 viewer.show()

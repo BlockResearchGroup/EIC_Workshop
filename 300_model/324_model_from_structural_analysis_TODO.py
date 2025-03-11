@@ -8,6 +8,7 @@ from compas_viewer.config import Config
 from compas_grid.elements import BeamProfileElement
 from compas_grid.elements import ColumnElement
 from compas_grid.elements import BlockElement
+from compas_grid.elements import CableElement
 from compas.tolerance import TOL
 
 # =============================================================================
@@ -30,6 +31,7 @@ elements = list(model.elements())
 columns = [element for element in elements if isinstance(element, ColumnElement)]
 beams = [element for element in elements if isinstance(element, BeamProfileElement)]
 blocks = [element for element in elements if isinstance(element, BlockElement)]
+cables = [element for element in elements if isinstance(element, CableElement)]
 
 
 # =============================================================================
@@ -37,8 +39,8 @@ blocks = [element for element in elements if isinstance(element, BlockElement)]
 # =============================================================================
 
 config = Config()
-config.camera.target = [0, 1000, 1250]
-config.camera.position = [0, -10000, 8125]
+config.camera.target = [0, 1000, 500]
+config.camera.position = [0, -7000, 4000]
 config.camera.near = 10
 config.camera.far = 100000
 config.camera.pandelta = 100
@@ -47,22 +49,33 @@ config.renderer.show_grid = False
 viewer = Viewer(config=config)
 
 viewer.scene.add(
-    [e.modelgeometry for e in blocks],
-    show_faces=True,
-    name="Blocks",
-)
-
-viewer.scene.add(
-    [Brep.from_mesh(e.modelgeometry) for e in columns],
+    [e.modelgeometry for e in columns],
     show_faces=True,
     opacity=0.7,
     name="Columns",
 )
 
 viewer.scene.add(
-    [Brep.from_mesh(e.modelgeometry) for e in beams],
+    [e.modelgeometry for e in beams],
     show_faces=True,
+    opacity=0.7,
     name="Beams",
+    hide_coplanaredges=True,
+)
+
+viewer.scene.add(
+    [e.modelgeometry for e in blocks],
+    show_faces=True,
+    opacity=0.7,
+    name="Blocks",
+)
+
+viewer.scene.add(
+    [e.modelgeometry for e in cables],
+    show_faces=True,
+    opacity=0.7,
+    name="Cables",
+    hide_coplanaredges=True,
 )
 
 viewer.show()
