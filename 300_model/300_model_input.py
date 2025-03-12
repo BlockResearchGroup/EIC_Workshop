@@ -52,9 +52,7 @@ compas.json_dump(
 config = Config()
 config.camera.target = [0, 1000, 500]
 config.camera.position = [0, -7000, 4000]
-config.camera.near = 10
-config.camera.far = 100000
-config.camera.pandelta = 100
+config.camera.scale = 1000
 config.renderer.gridsize = (20000, 20, 20000, 20)
 config.renderer.show_grid = False
 viewer = Viewer(config=config)
