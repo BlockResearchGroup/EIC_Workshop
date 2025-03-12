@@ -1,14 +1,8 @@
-compas_assembly >=0.7.0
-compas_cra
-compas_dr
-compas_fd
-compas_gmsh
-compas_tna
-compas_ifc
-compas_model
+compas
 compas_viewer
 compas_notebook
-compas_session >=0.4.5
 compas_rv
+compas_gmsh
+compas_ifc
 git+https://github.com/BRG-research/compas_grid.git
 git+https://github.com/BlockResearchGroup/compas-Masonry.git
