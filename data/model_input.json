@@ -14,7 +14,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "b3548332-9bb3-4255-adf4-b95d12230a25"
+            "guid": "04c355c9-cdaa-4c5f-b5c5-a0c6bf44d554"
         },
         {
             "data": {
@@ -30,7 +30,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "022684f8-0779-4731-b7b5-1fe52bee67d6"
+            "guid": "2205416b-d8e3-4e87-84b8-9211df2e4559"
         },
         {
             "data": {
@@ -46,7 +46,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "ca8cbbff-88ba-4fb4-9e75-157a591ddca6"
+            "guid": "2e51f983-9fbb-463f-b48b-04d9b2972b47"
         },
         {
             "data": {
@@ -62,7 +62,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "e777d28e-f0e0-4ede-a6f3-33e61f4ca75e"
+            "guid": "15a9b371-f0d0-4a5c-a292-a84602b43439"
         },
         {
             "data": {
@@ -78,7 +78,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "27fff655-eb58-4405-b992-ef14311c2c24"
+            "guid": "c5efebbe-2623-4c64-914e-005433f41cf7"
         },
         {
             "data": {
@@ -94,7 +94,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "0b997ee1-cede-4d5b-be23-cdbfe1018d34"
+            "guid": "84ff8f7f-1405-4813-a3fe-744df3d57eef"
         },
         {
             "data": {
@@ -110,7 +110,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "db54207f-a8b6-4f71-9da3-8ee2d748dc91"
+            "guid": "1909b76c-fe32-44ee-93e4-282d20ba6370"
         },
         {
             "data": {
@@ -126,7 +126,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "5590d37e-266a-4fe5-8725-abccda26bf03"
+            "guid": "7d4817ac-82b0-46e8-a8b0-50b98644dc20"
         }
     ],
     "meshes": [
@@ -178,7 +178,7 @@
                 }
             },
             "dtype": "compas.datastructures/Mesh",
-            "guid": "1a8a4e2b-48c5-4c6f-a1b1-80cd83b24196"
+            "guid": "92ee50dd-47c8-449b-b499-6cd7b85c1b08"
         }
     ]
 }
