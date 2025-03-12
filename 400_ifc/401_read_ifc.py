@@ -1,11 +1,9 @@
 from compas_ifc.model import Model
-import os
+from pathlib import Path
 
-
-HERE = os.path.dirname(os.path.abspath(__file__))
 
 # Loading an IFC file and print summary
-model = Model(os.path.join(HERE, "Duplex_A_20110907.ifc"))
+model = Model(Path(__file__).parent.parent / "data" / "Duplex_A_20110907.ifc")
 model.print_summary()
 
 # # print the spatial hierarchy
