@@ -14,7 +14,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "f1af9c6d-e731-4347-b664-e185bf60513f"
+            "guid": "95286731-0069-46d4-8a6a-870764439113"
         },
         {
             "data": {
@@ -30,7 +30,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "89a4137a-99b3-4abc-a2b6-31ea859dcc5f"
+            "guid": "15da4d96-6966-4414-b47a-80c991fefa35"
         },
         {
             "data": {
@@ -46,7 +46,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "d88c8816-5ca4-4a34-87fc-fa16469dee88"
+            "guid": "24a975a4-352f-4cc6-bae0-32f2bbcb6d33"
         },
         {
             "data": {
@@ -62,7 +62,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "02c5fa9a-71ff-455b-96ef-b74f8c60dd33"
+            "guid": "6503af24-62b1-4433-9235-a6bba38222a3"
         },
         {
             "data": {
@@ -78,7 +78,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "acf427e6-cf14-4909-9684-1f6e88b6a29c"
+            "guid": "51300a34-0ea0-48ea-b856-3c602581722e"
         },
         {
             "data": {
@@ -94,7 +94,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "52da48d5-c8d2-48a7-a1be-73bbb0e664e9"
+            "guid": "ada2215e-d380-48a4-a5fb-673dadccd267"
         },
         {
             "data": {
@@ -110,7 +110,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "8db78b4b-a709-4a3e-ad54-0b7e7b18212f"
+            "guid": "0b3aed45-d488-4e33-b0c3-0a0d36b2d25f"
         },
         {
             "data": {
@@ -126,7 +126,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "1d4b61f4-934f-47d6-ba00-d62d5b891ea0"
+            "guid": "604f7201-5969-4d8b-bcaf-6f505f777f85"
         },
         {
             "data": {
@@ -142,7 +142,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "e97b7a07-2533-4e31-9e51-2fee0a42ffe4"
+            "guid": "e055f340-7bbb-43f3-8443-d1c1d62d1e25"
         },
         {
             "data": {
@@ -158,7 +158,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "504ab424-65ce-405e-be74-5ecbf917edab"
+            "guid": "7e759503-8153-4cb4-af8b-5032d3307b10"
         },
         {
             "data": {
@@ -174,7 +174,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "2644c97b-d91b-446f-9923-6748c5c32398"
+            "guid": "df7f0544-8cb7-4314-a3b2-1d93f77688f8"
         },
         {
             "data": {
@@ -190,7 +190,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "83e1f37c-3a77-4a15-b890-39e7acc7d5dc"
+            "guid": "47535bc8-b767-4fef-b70e-561e08194bc7"
         },
         {
             "data": {
@@ -206,7 +206,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "1dfdd03f-5d9f-4e45-b64c-a3c4f98ca215"
+            "guid": "5e31ff61-ab7e-4d62-a835-752a90b14f65"
         },
         {
             "data": {
@@ -222,7 +222,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "9274c4b3-dd85-408f-bb23-08ea8268bb87"
+            "guid": "75ab5771-3eef-4e50-ab4a-90d9b87f3c58"
         },
         {
             "data": {
@@ -238,7 +238,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "b230aea6-7249-4bd1-a36a-599e18821c3c"
+            "guid": "0001582a-b01c-4dc0-91c9-9f194b92a146"
         },
         {
             "data": {
@@ -254,7 +254,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "663de72d-fd8b-4db7-b0af-e44c9fa706f4"
+            "guid": "81c6a067-9ed3-4d9d-a86f-ebeb961f4dfb"
         },
         {
             "data": {
@@ -270,7 +270,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "916b0f7b-ecf2-41b0-8502-fc764ab1bdc2"
+            "guid": "6eacd2d4-ae89-4653-b5f5-3aca0c9368ab"
         },
         {
             "data": {
@@ -286,7 +286,7 @@
                 ]
             },
             "dtype": "compas.geometry/Line",
-            "guid": "f1fc0300-e4d8-4901-a629-b9c29b3fa0a0"
+            "guid": "665cc459-7b1b-41f2-8037-f957ca867853"
         }
     ],
     "meshes": [
@@ -378,7 +378,7 @@
                 }
             },
             "dtype": "compas.datastructures/Mesh",
-            "guid": "815d0ec8-926f-48ff-9dc8-6aa23548ca77"
+            "guid": "64a4c909-5545-4644-983e-0bb67bc02854"
         },
         {
             "data": {
@@ -428,7 +428,7 @@
                 }
             },
             "dtype": "compas.datastructures/Mesh",
-            "guid": "63231ab8-811d-407e-9eaa-e76256657649"
+            "guid": "039a2289-ff97-4af4-966b-753032b07caa"
         },
         {
             "data": {
@@ -478,7 +478,7 @@
                 }
             },
             "dtype": "compas.datastructures/Mesh",
-            "guid": "05925cd4-e41a-43dc-b50d-adef22fd7be2"
+            "guid": "26cecde9-016b-4446-ae02-943e138843d1"
         }
     ]
 }

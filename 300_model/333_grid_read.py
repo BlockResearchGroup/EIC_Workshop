@@ -32,9 +32,7 @@ blocks = [element for element in elements if isinstance(element, BlockElement)]
 config = Config()
 config.camera.target = [3000, 1000, 1250]
 config.camera.position = [3000, -10000, 8125]
-config.camera.near = 10
-config.camera.far = 100000
-config.camera.pandelta = 100
+config.camera.scale = 1000
 config.renderer.gridsize = (20000, 20, 20000, 20)
 config.renderer.show_grid = False
 viewer = Viewer(config=config)
