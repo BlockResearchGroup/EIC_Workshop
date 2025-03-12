@@ -10,7 +10,7 @@ Online on Zoom, link: [Join meeting](https://ethz.zoom.us/j/63964504836)
 **Tentative Schedule**
 * 13:00 to 14:00 - COMPAS introduction - Dr. Tom Van Mele
 * 14:10 to 15:00 - COMPAS at BRG/VAULTED - Dr. Tom Van Mele
-* 15:10 to 16:00 - COMPAS at GKR - Gonzalo Casas and Chen Kasirer
+* 15:10 to 16:00 - COMPAS at GKR - Gonzalo Casas
 * 16:10 to 17:00 - COMPAS for EIC (CARBCOMN) - Dr. Alessandro Dell'Endice
 
 **Slack**
