@@ -16,7 +16,10 @@ from compas.tolerance import TOL
 # =============================================================================
 
 model: Model = compas.json_load(Path(__file__).parent.parent / "data" / "model_with_modifiers.json")
-# meshes = compas.json_load(Path(__file__).parent.parent / "data" / "structural_analysis_results.json")
+contact_forces = compas.json_load(Path(__file__).parent.parent / "data" / "Barrel_3dec.json")
+
+for contact_force in contact_forces:
+    contact_force.scale(1000)
 
 
 # =============================================================================
@@ -65,7 +68,7 @@ viewer.scene.add(
 
 viewer.scene.add(
     [e.modelgeometry for e in blocks],
-    show_faces=True,
+    show_faces=False,
     opacity=0.7,
     name="Blocks",
 )
@@ -76,6 +79,13 @@ viewer.scene.add(
     opacity=0.7,
     name="Cables",
     hide_coplanaredges=True,
+)
+
+viewer.scene.add(
+    contact_forces,
+    linewidth= 4,
+    linecolor=(0,200,0),
+    name="3DEC_contact_forces",
 )
 
 viewer.show()
