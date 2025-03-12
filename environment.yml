@@ -6,4 +6,4 @@ dependencies:
   - python
   - compas
   - compas_occ
-  - compas_cgal
+  - compas_cgal =0.4.0
