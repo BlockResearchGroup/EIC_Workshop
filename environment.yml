@@ -7,3 +7,11 @@ dependencies:
   - compas
   - compas_occ
   - compas_cgal =0.4.0
+  - pip:
+      - compas_viewer
+      - compas_notebook
+      - compas_gmsh
+      - compas_ifc
+      - compas_rv
+      - compas_fofin
+      - compas_grid
