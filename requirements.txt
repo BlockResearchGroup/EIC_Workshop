@@ -5,5 +5,4 @@ compas_gmsh
 compas_ifc
 compas_rv
 compas_fofin
-git+https://github.com/BRG-research/compas_grid.git
-git+https://github.com/BlockResearchGroup/compas-Masonry.git
+compas_grid
