@@ -1,3 +1,4 @@
 *.rhl
 *.stp
 session.json
+.DS_Store
