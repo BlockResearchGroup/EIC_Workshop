@@ -1,0 +1,9 @@
+name: eic
+channels:
+  - conda-forge
+dependencies:
+  - pip
+  - python
+  - compas
+  - compas_occ
+  - compas_cgal
